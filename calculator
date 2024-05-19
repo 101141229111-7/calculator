@@ -1,0 +1,29 @@
+def calculator():
+  #prompt the user to input two numbers and an operation choice
+  n1 = float(input("Enter first number:"))
+  op = input("Enter operation(+,-,*,/):")
+  n2 = float(input("Enter second number:"))
+
+      #perform the calculation
+      if op == '+':
+         res = n1+n2
+      elif op == '-':
+         res = n1-n2
+      elif op =='*':
+         res = n1*n2
+      elif op =='/':
+         if n2! = 0:
+            res = n1/n2
+         else:
+            print("Error:Division by zero is not allowed")
+            return
+         else:
+           print("Error:Invalid operation")
+           return
+
+         # Display the result
+         print(f"The result is : {res}")
+
+#call the function
+calculator()
+     
